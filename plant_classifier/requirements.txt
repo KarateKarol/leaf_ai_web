@@ -1,0 +1,5 @@
+deeplake
+tensorflow
+flask
+matplotlib
+pillow
