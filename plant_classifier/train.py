@@ -4,8 +4,8 @@ from model import create_model
 def main():
     train_ds, val_ds = load_data()
 
-    # liczba klas w dataset
-    num_classes = 38  # PlantVillage ma 38 klas (możesz sprawdzić w dataset)
+
+    num_classes = 38
 
     model = create_model(num_classes)
     model.summary()

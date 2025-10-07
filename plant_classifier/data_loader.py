@@ -2,10 +2,10 @@ import deeplake
 import tensorflow as tf
 
 def load_data():
-    # Pobieranie datasetu PlantVillage bez augmentacji
+
     ds = deeplake.load('hub://activeloop/plantvillage-without-augmentation')
 
-    # Konwersja do tensorflow dataset
+
     train_ds = ds.tensorflow(
         tensors=["images", "labels"],
         split="train",
